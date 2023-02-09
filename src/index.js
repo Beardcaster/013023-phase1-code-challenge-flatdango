@@ -82,13 +82,18 @@ function populateMovieList(movieObj) {
 }
 
 buyBtn.addEventListener('click', e =>{
-    
-    let ticketsLeft = document.getElementById("ticket-num");
+
+    //it aint pretty but its honest work
+
     let ticketCount = parseInt(document.getElementById("ticket-num").innerText)
-    ticketCount = ticketCount - 1;
-    ticketsLeft.innerText = ticketCount;
+    if (ticketCount > 0){
     
-    console.log(ticketCount)
+        let ticketsLeft = document.getElementById("ticket-num");    
+        ticketCount = ticketCount - 1;
+        ticketsLeft.innerText = ticketCount;
+        
+        console.log(ticketCount)}
+        
 })
 
 
