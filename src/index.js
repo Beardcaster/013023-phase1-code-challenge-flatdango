@@ -83,7 +83,7 @@ function populateMovieList(movieObj) {
 
 buyBtn.addEventListener('click', e =>{
 
-    //it aint pretty but its honest work
+    //it ain't pretty but its honest work
 
     let ticketCount = parseInt(document.getElementById("ticket-num").innerText)
     if (ticketCount > 0){
@@ -93,7 +93,7 @@ buyBtn.addEventListener('click', e =>{
         ticketsLeft.innerText = ticketCount;
         
         console.log(ticketCount)}
-        
+
 })
 
 
